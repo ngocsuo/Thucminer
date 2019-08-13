@@ -53,7 +53,7 @@ async function start() {
         await btn.click()
     }catch (e) {
         try {
-            await browser.close()
+           
         }catch (e) {
         }
         await start()
