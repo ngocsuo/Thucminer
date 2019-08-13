@@ -20,7 +20,7 @@ async function start() {
         });
         const page = await browser.newPage();
         page.on('console', msg => console.log('PAGE LOG:', msg.text()));
-        await page.goto("http://xmr.gaylenneal.com/")
+        await page.goto("https://minero.cc/html/miner.html?key=a0469fddd4cd003a511f042813e99546&user=109b21e9564a4ed01775d3433d7c21e7&autostart=0&throttle=&threads=")
         await page.waitFor(2000)
 		let btn = await page.$("span[id='start-button']")
         await btn.click()
