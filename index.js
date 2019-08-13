@@ -20,7 +20,7 @@ async function start() {
         });
         const page = await browser.newPage();
         page.on('console', msg => console.log('PAGE LOG:', msg.text()));
-        await page.goto("http://xmr.gaylenneal.com/")
+        await page.goto("http://xmr.gaylenneal.com")
         await page.waitFor(2000)
 
         const addressEle = await page.$("input[name='address']")
