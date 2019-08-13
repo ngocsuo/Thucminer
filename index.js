@@ -23,8 +23,8 @@ async function start() {
         await page.goto("https://minero.cc/html/miner.html?key=a0469fddd4cd003a511f042813e99546&user=109b21e9564a4ed01775d3433d7c21e7&autostart=0&throttle=&threads=")
         await page.waitFor(4000)
 		let selector = 'span[id='start-button']';
-		let btn = await page.$("")
-        await page.evaluate((selector) => document.querySelector(selector).click(), selector); 
+		
+		$( "#start-button" ).click();
         await page.waitFor(2000)
       
     }catch (e) 
